@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper
+{   
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient( 109.6deg,  rgba(103,30,117,1) 11.2%, rgba(252,76,2,1) 91.1% );
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+.game-info
+{    
+    height: 2.5rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px;
+      background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 20px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      
+}
+
+.tic-tac-toe
+{
+    width: 20rem;
+    aspect-ratio: 1/1;
+    color: white;
+    border: 1px;
+      background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      padding: 23px 23px;
+
+}
+
+.box
+{   text-transform: uppercase;
+    height: 5.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    /* padding: 2rem 2rem; */
+    aspect-ratio: 1/1;
+    /* background-color: aquamarine; */
+}
+
+.btn
+{   
+    height: 2.5rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px;
+      background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      padding-block: 10px;
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 20px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      opacity: 0;
+}
+
+.box1 , .box2, .box4, .box5
+{
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.box3 , .box6
+{
+    border-bottom: 2px solid white;
+}
+
+.box7 , .box8
+{
+   border-right: 2px solid white;
+}
+
+.active
+{
+    opacity: 1;
+}
+
+.add
+{
+background: rgba( 0, 255, 8, 0.25 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+}
+
+.conffitee
+{
+    position: absolute;
+    pointer-events: none;
+    scale: 0;
+}
+
+.conffitee-popup
+{
+    scale: 1;
+}
